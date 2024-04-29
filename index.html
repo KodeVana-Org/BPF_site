@@ -12,43 +12,42 @@
 
 <body style="background-color: #f6f6f6">
   <div class="text-black">
-    <div class="flex justify-between ml-[47%] mt-5 items-center">
-      <div class="">
-        <img src="assets/fl.svg" alt="flag" class="bottom-72 w-28 h-16 rounded-md" />
-      </div>
-
-      <div class="items-center place-items-center font-inter text-lg font-normal text-black text-left">
-        <button type="button"
-          class="text-center items-center py-2 px-4 mr-10 text-xl font-medium text-black focus:outline-none bg-white rounded-full border border-red-600 focus:z-10 focus:ring-4 focus:ring-red-100 dark:focus:ring-red-70 dark:text-gray-400 dark:hover:text-black hover:bg-slate-200">
-           <a href="public/lite.apk" download="BPF.apk">DOWNLOAD NOW</a> 
-        </button>
-      </div>
-    </div>
-    <div class="">
-      <div class="px-[25%] mt-24">
-        <h1 class="items-center justify-center text-center text-2xl font-bold">
-          Peace, Unity and Prosperity
-        </h1>
-        <p class="text-center mt-2 justify-center items-center">
-          Introducing the new BPF app, designed to seamlessly connect you with
-          our leaders. This innovative platform bridges the gap between
-          employees and leaders, empowering collaboration and engagement like
-          never before.
-        </p>
-        <div class="mt-4 items-center text-center">
-          <button type="button"
-            class="animate-bounce hover:scale-110 transition duration-300 shadow ease-in-out text-center items-center px-3 py-1 text-xl font-medium text-black focus:outline-none bg-white rounded-full border-2 border-red-500 focus:z-10 focus:ring-4 focus:ring-red-100 dark:focus:ring-red-70 hover:bg-slate-300">
-            <a href="public/lite.apk" download="BPF.apk">INSTALL NOW</a>
-          </button>
+    <div class="ml-[47%]">
+    <div class="flex mt-5 items-center justify-between mr-[70px]">
+        <div class="flex items-center justify-center md:justify-start"> <!-- Center flag horizontally on mobile devices -->
+            <img src="assets/fl.svg" alt="flag" class="w-28 h-16 rounded-md" />
         </div>
-      </div>
+
+        <div class="items-center place-items-center font-inter text-lg font-normal text-black text-left ml-auto md:ml-0"> <!-- Push button to the end of the right side -->
+            <button type="button"
+                class="text-center items-center py-2 px-4 text-xl font-medium text-black focus:outline-none bg-white rounded-full border border-red-600 focus:z-10 focus:ring-4 focus:ring-red-100 dark:focus:ring-red-70 dark:text-gray-400 dark:hover:text-black hover:bg-slate-200 md:inline-block hidden md:block">
+                <a href="public/lite.apk" download="BPF.apk">DOWNLOAD NOW</a>
+            </button>
+        </div>
     </div>
+</div>
+
+    <div class="px-4 md:px-[25%] mt-24"> <!-- Adjusted padding for responsiveness -->
+    <h1 class="text-center md:text-2xl font-bold"> <!-- Centered text on mobile and larger screens -->
+        Peace, Unity and Prosperity
+    </h1>
+    <p class="text-center mt-2"> <!-- Centered text on mobile and larger screens -->
+        Introducing the new BPF app, designed to seamlessly connect you with our leaders. This innovative platform bridges the gap between employees and leaders, empowering collaboration and engagement like never before.
+    </p>
+    <div class="mt-4 text-center"> <!-- Centered button on mobile and larger screens -->
+        <button type="button"
+            class="animate-bounce hover:scale-110 transition duration-300 shadow ease-in-out text-center px-3 py-1 text-xl font-medium text-black focus:outline-none bg-white rounded-full border-2 border-red-500 focus:z-10 focus:ring-4 focus:ring-red-100 dark:focus:ring-red-70 hover:bg-slate-300">
+            <a href="public/lite.apk" download="BPF.apk">INSTALL NOW</a>
+        </button>
+    </div>
+</div>
+
     <div class="flex items-center text-center justify-center mt-4">
       <div>
-        <img src="assets/3rd.jpeg" alt="first image" class="h-[450px]" />
+        <img src="assets/3rd.jpeg" alt="first image" class="h-[450px] responsive-img" />
       </div>
-      <div><img src="assets/main.jpeg" alt="second" class="h-[500px]" /></div>
-      <div><img src="assets/3rd.jpeg" alt="third" class="h-[450px]" /></div>
+      <div><img src="assets/main.jpeg" alt="second" class="h-[500px] responsive-img" /></div>
+      <div><img src="assets/3rd.jpeg" alt="third" class="h-[450px] responsive-img" /></div>
     </div>
     <div class="flex mt-5 gap-5 justify-center items-center text-center">
       <div
@@ -96,7 +95,7 @@
           </a>
         </div>
       </footer>
-      
+
       <a href="http://www.kodevana.com" target="_blank" class=" mt-5 ml-[45%] mb-10">All rights reserved by Kodevana</a>
     </div>
   </div>
